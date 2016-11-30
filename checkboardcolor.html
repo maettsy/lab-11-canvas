@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +28,19 @@ function draw(row, col){
 		}
 	}
 
+	for (j=0; j<col; j=j+1){
+		for (i=0; i<row; i=i+1){
+			context.fillStyle="#000000";
+			context.fillRect(i*100+50,j*100, 50, 50);
+		}
+	}
 
+	for (j=0; j<col; j=j+1){
+		for (i=0; i<row; i=i+1){
+			context.fillStyle="#000000";
+			context.fillRect(i*100,j*100+50, 50, 50);
+		}
+	}
 
 }
 
